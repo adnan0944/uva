@@ -37,23 +37,6 @@ int BFS(int s, int t)
     return flowArray[t];
 }
 
-/*int maxflow(int s, int t) // edmond-karp
-{
-    memcpy(baki, edge, sizeof(edge));
-    int flow=0, dif, i, j;
-    while(dif = BFS(s, t))
-    {
-        for (i = pathArray[t], j = t; i != j; i = pathArray[j = i])
-        {
-            baki[i][j] = baki[i][j]-dif;
-            baki[j][i] = baki[j][i]+dif;
-
-        }
-        flow =flow+ dif;
-    }
-    return flow;
-}*/
-
 int main()
 {
     //freopen("in.txt","r",stdin);
